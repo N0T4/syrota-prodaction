@@ -14,16 +14,16 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
+    <html lang="en" className="scroll-smooth">
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@400;500;600&family=Lora:wght@400;500;600&display=swap" rel="stylesheet" />
       </head>
-      <body className="bg-white text-theme-text font-body min-h-screen">
+      <body className="min-h-screen bg-white text-theme-text font-body antialiased">
         <Navigation />
         <main className="flex min-h-screen flex-col pt-20">
-        {children}
+          {children}
         </main>
         <Footer />
       </body>

@@ -17,26 +17,11 @@ const nextConfig = {
   poweredByHeader: false,
   reactStrictMode: true,
   swcMinify: true,
-  distDir: '.next',
-  trailingSlash: true,
-  // Generate static paths for dynamic routes
-  exportPathMap: async function() {
-    return {
-      '/': { page: '/' },
-      '/about': { page: '/about' },
-      '/blog': { page: '/blog' },
-      '/contact': { page: '/contact' },
-      '/experience': { page: '/experience' },
-      '/portfolio': { page: '/portfolio' }
-    }
+  assetPrefix: '/',
+  compiler: {
+    removeConsole: false,
   },
-  webpack: (config) => {
-    config.module.rules.push({
-      test: /\.css$/,
-      use: ['style-loader', 'css-loader', 'postcss-loader'],
-    });
-    return config;
-  }
+  transpilePackages: ['@netlify/plugin-nextjs']
 }
 
 export default nextConfig 

@@ -2,16 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --foreground-rgb: 34, 40, 49;
+  --background-rgb: 255, 255, 255;
+}
+
 @layer base {
   html {
     scroll-behavior: smooth;
   }
 
   body {
+    color: rgb(var(--foreground-rgb));
+    background: rgb(var(--background-rgb));
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    @apply bg-white text-theme-text;
   }
 }
 

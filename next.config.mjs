@@ -21,7 +21,17 @@ const nextConfig = {
   compiler: {
     removeConsole: false,
   },
-  transpilePackages: ['@netlify/plugin-nextjs']
+  transpilePackages: ['@netlify/plugin-nextjs'],
+  distDir: '.next',
+  generateBuildId: async () => {
+    return 'build'
+  },
+  basePath: '',
+  cssModules: true,
+  cssLoaderOptions: {
+    importLoaders: 1,
+    localIdentName: '[local]___[hash:base64:5]',
+  }
 }
 
 export default nextConfig 

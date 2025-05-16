@@ -74,7 +74,7 @@ export default function Home() {
           </div>
           <div className="theme-card group h-[800px] flex flex-col">
             <div className="relative h-[450px] mb-4 overflow-hidden rounded flex justify-center items-center bg-gray-50">
-              <Image
+            <Image
                 src="/img/IMG_1843.PNG"
                 alt="The Last Wish Project"
                 width={767}
@@ -124,7 +124,7 @@ export default function Home() {
           {blogPosts.slice(0, 3).map((post) => (
             <article key={post.id} className="theme-card">
               <div className="relative aspect-video mb-4 overflow-hidden rounded">
-                <Image
+          <Image
                   src={post.thumbnail}
                   alt={post.title}
                   width={256}

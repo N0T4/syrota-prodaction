@@ -4,6 +4,13 @@ import Link from 'next/link';
 import { projects } from '../../../types/project';
 import ImageCarousel from '../../../components/ImageCarousel';
 
+// Generate static params for all projects
+export function generateStaticParams() {
+  return projects.map((project) => ({
+    id: project.id,
+  }))
+}
+
 export default function ProjectPage({ params }: { params: { id: string } }) {
   const project = projects.find(p => p.id === params.id);
 

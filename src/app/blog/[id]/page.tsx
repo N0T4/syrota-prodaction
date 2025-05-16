@@ -3,6 +3,13 @@ import Image from 'next/image'
 import { notFound } from 'next/navigation'
 import { blogPosts } from '@/types/blog'
 
+// Generate static params for all blog posts
+export function generateStaticParams() {
+  return blogPosts.map((post) => ({
+    id: post.id,
+  }))
+}
+
 export default function BlogPost({ params }: { params: { id: string } }) {
   const post = blogPosts.find(post => post.id === params.id)
 

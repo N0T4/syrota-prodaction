@@ -19,11 +19,25 @@ export default function ContactPage() {
     setIsSubmitting(true);
     
     try {
-      await new Promise(resolve => setTimeout(resolve, 1000)); // Simulate API call
-      setSubmitStatus('success');
-      setFormData({ name: '', email: '', subject: '', message: '' });
+      // Here you would typically send the form data to a third-party form service
+      // like Formspree, Netlify Forms, or a similar static form service
+      const response = await fetch('https://formspree.io/f/your-form-id', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+
+      if (response.ok) {
+        setSubmitStatus('success');
+        setFormData({ name: '', email: '', subject: '', message: '' });
+      } else {
+        throw new Error('Form submission failed');
+      }
     } catch (error) {
       setSubmitStatus('error');
+      console.error('Form submission error:', error);
     } finally {
       setIsSubmitting(false);
     }
@@ -35,142 +49,91 @@ export default function ContactPage() {
   };
 
   return (
-    <main className="min-h-screen bg-white">
-      <div className="container mx-auto px-6 py-20">
-        <Link 
-          href="/" 
-          className="inline-block px-6 py-2 mb-8 text-theme-primary border border-theme-primary/20 rounded hover:bg-theme-primary/5 transition-colors font-body"
-        >
-          ← Back to Home
-        </Link>
-
-        <div className="max-w-4xl mx-auto">
-          <h1 className="text-4xl md:text-6xl mb-8 font-display text-theme-primary text-center">
-            Get in Touch
-          </h1>
-          
-          <p className="text-xl mb-12 text-theme-text/80 text-center">
-            I'm always interested in hearing about new projects and opportunities.
-            Feel free to reach out!
-          </p>
-
-          <div className="grid md:grid-cols-2 gap-12 mb-12">
-            {/* Contact Information */}
-            <div>
-              <h2 className="text-2xl font-display mb-4 text-theme-primary">Contact Information</h2>
-              <div className="space-y-4 text-theme-text/80">
-                <p>
-                  <span className="font-semibold">Email:</span>
-                  <br />
-                  <a href="mailto:valerisyrota@gmail.com" className="hover:text-theme-primary transition-colors">
-                    valerisyrota@gmail.com
-                  </a>
-                </p>
-                <p>
-                  <span className="font-semibold">Location:</span>
-                  <br />
-                  Dublin, Ireland
-                </p>
+    <div className="min-h-screen bg-white py-20">
+      <div className="container mx-auto px-6">
+        <h1 className="text-4xl md:text-5xl font-display text-theme-primary mb-8 text-center">
+          Get in Touch
+        </h1>
+        <div className="max-w-2xl mx-auto">
+          {submitStatus === 'success' ? (
+            <div className="bg-green-50 border border-green-200 rounded-lg p-6 text-center">
+              <h2 className="text-2xl font-display text-theme-primary mb-4">Thank You!</h2>
+              <p className="text-theme-text/80 mb-6">Your message has been sent successfully. I'll get back to you as soon as possible.</p>
+              <button
+                onClick={() => setSubmitStatus('idle')}
+                className="theme-button"
+              >
+                Send Another Message
+              </button>
+            </div>
+          ) : (
+            <form onSubmit={handleSubmit} className="space-y-6">
+              <div>
+                <label htmlFor="name" className="block text-theme-text/80 mb-2 font-body">Name</label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  value={formData.name}
+                  onChange={handleChange}
+                  required
+                  className="w-full px-4 py-2 border border-theme-primary/20 rounded-lg focus:outline-none focus:ring-2 focus:ring-theme-primary/20 font-body"
+                />
               </div>
-            </div>
-
-            <div>
-              <h2 className="text-2xl font-display mb-4 text-theme-primary">Connect</h2>
-              <div className="space-y-2 text-theme-text/80">
-                <p>
-                  <a href="https://www.linkedin.com/in/valeriia-syrota-8b5a212b8/" target="_blank" rel="noopener noreferrer" className="hover:text-theme-primary transition-colors">
-                    LinkedIn
-                  </a>
-                </p>
-                <p>
-                  <a href="https://www.instagram.com/valeri_syrota/" target="_blank" rel="noopener noreferrer" className="hover:text-theme-primary transition-colors">
-                    Instagram
-                  </a>
-                </p>
+              <div>
+                <label htmlFor="email" className="block text-theme-text/80 mb-2 font-body">Email</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  value={formData.email}
+                  onChange={handleChange}
+                  required
+                  className="w-full px-4 py-2 border border-theme-primary/20 rounded-lg focus:outline-none focus:ring-2 focus:ring-theme-primary/20 font-body"
+                />
               </div>
-            </div>
-          </div>
-
-          {/* Contact Form */}
-          <form onSubmit={handleSubmit} className="space-y-6">
-            <div>
-              <label htmlFor="name" className="block text-sm font-medium text-theme-text/80 mb-2">
-                Name
-              </label>
-              <input
-                type="text"
-                id="name"
-                name="name"
-                value={formData.name}
-                onChange={handleChange}
-                required
-                className="w-full px-4 py-2 border border-theme-primary/20 rounded-md focus:outline-none focus:ring-2 focus:ring-theme-primary/20"
-              />
-            </div>
-
-            <div>
-              <label htmlFor="email" className="block text-sm font-medium text-theme-text/80 mb-2">
-                Email
-              </label>
-              <input
-                type="email"
-                id="email"
-                name="email"
-                value={formData.email}
-                onChange={handleChange}
-                required
-                className="w-full px-4 py-2 border border-theme-primary/20 rounded-md focus:outline-none focus:ring-2 focus:ring-theme-primary/20"
-              />
-            </div>
-
-            <div>
-              <label htmlFor="subject" className="block text-sm font-medium text-theme-text/80 mb-2">
-                Subject
-              </label>
-              <input
-                type="text"
-                id="subject"
-                name="subject"
-                value={formData.subject}
-                onChange={handleChange}
-                required
-                className="w-full px-4 py-2 border border-theme-primary/20 rounded-md focus:outline-none focus:ring-2 focus:ring-theme-primary/20"
-              />
-            </div>
-
-            <div>
-              <label htmlFor="message" className="block text-sm font-medium text-theme-text/80 mb-2">
-                Message
-              </label>
-              <textarea
-                id="message"
-                name="message"
-                value={formData.message}
-                onChange={handleChange}
-                required
-                rows={5}
-                className="w-full px-4 py-2 border border-theme-primary/20 rounded-md focus:outline-none focus:ring-2 focus:ring-theme-primary/20"
-              />
-            </div>
-
-            <button
-              type="submit"
-              disabled={isSubmitting}
-              className={`w-full px-6 py-3 text-white bg-theme-primary rounded-md transition-colors
-                ${isSubmitting ? 'opacity-50 cursor-not-allowed' : 'hover:bg-theme-primary/90'}`}
-            >
-              {isSubmitting ? 'Sending...' : 'Send Message'}
-            </button>
-
-            {submitStatus === 'success' && (
-              <p className="text-green-600 text-center">Message sent successfully!</p>
-            )}
-            {submitStatus === 'error' && (
-              <p className="text-red-600 text-center">Failed to send message. Please try again.</p>
-            )}
-          </form>
+              <div>
+                <label htmlFor="subject" className="block text-theme-text/80 mb-2 font-body">Subject</label>
+                <input
+                  type="text"
+                  id="subject"
+                  name="subject"
+                  value={formData.subject}
+                  onChange={handleChange}
+                  required
+                  className="w-full px-4 py-2 border border-theme-primary/20 rounded-lg focus:outline-none focus:ring-2 focus:ring-theme-primary/20 font-body"
+                />
+              </div>
+              <div>
+                <label htmlFor="message" className="block text-theme-text/80 mb-2 font-body">Message</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  value={formData.message}
+                  onChange={handleChange}
+                  required
+                  rows={6}
+                  className="w-full px-4 py-2 border border-theme-primary/20 rounded-lg focus:outline-none focus:ring-2 focus:ring-theme-primary/20 font-body"
+                />
+              </div>
+              <div className="flex justify-center">
+                <button
+                  type="submit"
+                  disabled={isSubmitting}
+                  className={`theme-button ${isSubmitting ? 'opacity-50 cursor-not-allowed' : ''}`}
+                >
+                  {isSubmitting ? 'Sending...' : 'Send Message'}
+                </button>
+              </div>
+              {submitStatus === 'error' && (
+                <div className="text-red-600 text-center font-body">
+                  There was an error sending your message. Please try again.
+                </div>
+              )}
+            </form>
+          )}
         </div>
       </div>
-    </main>
+    </div>
   );
 } 

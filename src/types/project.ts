@@ -2,7 +2,7 @@ export interface Project {
   id: string;
   title: string;
   year: number;
-  category: 'Short Film' | 'Documentary' | 'TV Show' | 'Drama';
+  category: 'Short Film' | 'Documentary' | 'TV Show' | 'Drama' | 'Art-House';
   genre?: string;
   description: string;
   fullDescription?: string;
@@ -118,7 +118,7 @@ This project gave me the foundation, the insight, and the motivation to pursue p
     technicalDetails: {
       format: 'Digital',
       resolution: '4K',
-
+      duration: '15 minutes'
     }
   },
   {
@@ -175,7 +175,7 @@ This experience taught me the importance of mobility, speed, and adaptability in
     technicalDetails: {
       format: 'Digital',
       resolution: '4K',
-
+      duration: '25 minutes'
     }
   },
   {
@@ -221,7 +221,7 @@ This experience taught me the importance of mobility, speed, and adaptability in
     technicalDetails: {
       format: 'Digital',
       resolution: '4K',
-
+      duration: '10 minutes'
     }
   },
   {
@@ -287,7 +287,7 @@ As the Floor Manager, my role became especially active once we entered the rehea
     technicalDetails: {
       format: 'Digital',
       resolution: '4K',
-
+      duration: '30 minutes'
     }
   },
   {
@@ -340,7 +340,7 @@ This project sharpened my ability to bridge creativity and structure, and affirm
     technicalDetails: {
       format: 'Digital',
       resolution: '4K',
-
+      duration: '20 minutes'
     }
   },
   {
@@ -393,7 +393,7 @@ Completing this project was a deeply rewarding experience. It confirmed my passi
     technicalDetails: {
       format: 'Digital',
       resolution: '4K',
-
+      duration: '12 minutes'
     }
   }
 ]; 

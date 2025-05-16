@@ -8,7 +8,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "build:netlify": "next build && (IF NOT EXIST out\\.nojekyll type nul > out\\.nojekyll)",
+    "build:netlify": "next build && touch out/.nojekyll",
     "start": "next start",
     "lint": "next lint"
   },

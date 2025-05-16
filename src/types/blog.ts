@@ -47,7 +47,7 @@ Left Unsaid was not perfect - but it was real. It came from a place of growth, e
 This was just the beginning, but it gave me a foundation I will build on for every project to come.
     `,
     readTime: '5 min read',
-    thumbnail: '/img/pidor.jpeg',
+    thumbnail: '/img/pexels-markusspiske-6879095.jpg',
     tags: ['Production', 'Leadership', 'Student Film', 'Behind the Scenes'],
     category: 'Production'
   },

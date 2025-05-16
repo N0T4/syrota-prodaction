@@ -118,6 +118,7 @@ This project gave me the foundation, the insight, and the motivation to pursue p
     technicalDetails: {
       format: 'Digital',
       resolution: '4K',
+      duration: '15 minutes'
     }
   },
   {
@@ -173,7 +174,8 @@ This experience taught me the importance of mobility, speed, and adaptability in
     },
     technicalDetails: {
       format: 'Digital',
-      resolution: '4K'
+      resolution: '4K',
+      duration: '45 minutes'
     }
   },
   {
@@ -219,6 +221,7 @@ This experience taught me the importance of mobility, speed, and adaptability in
     technicalDetails: {
       format: 'Digital',
       resolution: '4K',
+      duration: '20 minutes'
     }
   },
   {
@@ -248,16 +251,20 @@ As the Floor Manager, my role became especially active once we entered the rehea
 -Departmental alignment through regular team meetings`
     },
     challenges: {
-      title: 'Team Collaboration',
-      description: `What made this project truly enjoyable was the upbeat, creative energy of the team. Each member took ownership of their role and remained open to feedback. Whether it was the graphics and lighting teams contributing to the show's visual identity, or the presenters shaping the tone and rhythm of the episode — the collaborative spirit was a driving force.`
+      title: 'Key Challenges',
+      description: `Managing a live studio environment presented unique challenges:
+-Coordinating multiple departments in real-time
+-Maintaining clear communication despite high-energy atmosphere
+-Adapting to technical issues without disrupting flow
+-Keeping talent and crew focused and on schedule`
     },
     learnings: {
       title: 'Key Takeaways',
-      description: `-Learned to manage high-pressure studio environments with focus and professionalism
--Refined my skills in multitasking and prioritization — often handling headset instructions, team questions, and on-floor direction simultaneously
--Gained confidence in translating complex technical instructions into clear, actionable guidance for crew and presenters
--Deepened my understanding of how interdepartmental communication shapes the success of live production
--Taking on the role of Floor Manager for Slay Station placed me right in the center of the action. It was a role that demanded both precision and flexibility — and helped me grow into someone who can lead calmly, communicate effectively, and keep a creative production on track.`
+      description: `This experience enhanced my:
+-Leadership and communication skills
+-Ability to work under pressure
+-Understanding of live TV production
+-Problem-solving capabilities in real-time situations`
     },
     thumbnail: '/img/Slay Station Head.PNG',
     images: [
@@ -265,15 +272,22 @@ As the Floor Manager, my role became especially active once we entered the rehea
       '/img/IMG_1834.JPG',
       '/img/IMG_1835.JPG',
       '/img/IMG_1836.JPG',
-      '/img/IMG_1837.JPG'
+      '/img/IMG_1837.JPG',
+      '/img/IMG_1839.PNG',
+      '/img/IMG_1841.PNG',
+      '/img/IMG_1842.PNG',
+      '/img/IMG_1843.PNG',
+      '/img/IMG_1844.PNG',
+      '/img/IMG_1845.PNG'
     ],
     credits: {
       director: 'Dana Syrota',
-      producer: 'Sarah Williams',
+      cinematographer: 'Sarah Wilson'
     },
     technicalDetails: {
       format: 'Digital',
       resolution: '4K',
+      duration: '30 minutes'
     }
   },
   {

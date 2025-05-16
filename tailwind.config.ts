@@ -22,9 +22,9 @@ const config: Config = {
         }
       },
       fontFamily: {
-        'display': ['var(--font-cormorant)', 'serif'],
-        'body': ['var(--font-lora)', 'serif'],
-        'sans': ['var(--font-inter)', 'sans-serif']
+        'display': ['Cormorant Garamond', 'serif'],
+        'body': ['Lora', 'serif'],
+        'sans': ['Inter', 'sans-serif']
       },
       typography: (theme: any) => ({
         DEFAULT: {

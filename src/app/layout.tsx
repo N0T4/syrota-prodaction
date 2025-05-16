@@ -2,28 +2,6 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { Navigation } from '@/components/Navigation'
 import { Footer } from '@/components/Footer'
-import { Cormorant_Garamond, Inter, Lora } from 'next/font/google'
-
-const cormorantGaramond = Cormorant_Garamond({
-  subsets: ['latin'],
-  weight: ['400', '500', '600', '700'],
-  variable: '--font-cormorant',
-  display: 'swap',
-})
-
-const inter = Inter({
-  subsets: ['latin'],
-  weight: ['400', '500', '600'],
-  variable: '--font-inter',
-  display: 'swap',
-})
-
-const lora = Lora({
-  subsets: ['latin'],
-  weight: ['400', '500', '600'],
-  variable: '--font-lora',
-  display: 'swap',
-})
 
 export const metadata: Metadata = {
   title: "Syrota.Production",
@@ -36,7 +14,15 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" className={`${cormorantGaramond.variable} ${inter.variable} ${lora.variable}`}>
+    <html lang="en">
+      <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link 
+          href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@400;500;600&family=Lora:wght@400;500;600&display=swap" 
+          rel="stylesheet"
+        />
+      </head>
       <body className="min-h-screen bg-white text-theme-text">
         <Navigation />
         <main className="flex min-h-screen flex-col pt-20">

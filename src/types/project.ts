@@ -340,6 +340,7 @@ This project sharpened my ability to bridge creativity and structure, and affirm
     technicalDetails: {
       format: 'Digital',
       resolution: '4K',
+      duration: '25 minutes'
     }
   },
   {
@@ -392,6 +393,7 @@ Completing this project was a deeply rewarding experience. It confirmed my passi
     technicalDetails: {
       format: 'Digital',
       resolution: '4K',
+      duration: '10 minutes'
     }
   }
 ]; 

@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground: #222831;
+  --background: #ffffff;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+}
+
+.theme-button {
+  @apply px-6 py-2 bg-theme-primary text-white font-body 
+         hover:bg-theme-secondary transition-colors rounded-md 
+         shadow-sm hover:shadow-md;
+}
+
+.theme-card {
+  @apply bg-white rounded-lg shadow-md hover:shadow-lg 
+         p-6 border border-theme-primary/10 
+         transition-all duration-300;
+}
+
+.theme-input {
+  @apply px-4 py-2 bg-white border border-theme-primary/20 
+         rounded-md focus:outline-none focus:border-theme-primary 
+         text-theme-text placeholder-theme-text/60;
+} 

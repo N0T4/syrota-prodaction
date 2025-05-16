@@ -10,28 +10,9 @@ const nextConfig = {
     ],
     domains: ['placehold.co'],
   },
-  experimental: {
-    typedRoutes: true,
-  },
-  output: 'standalone',
-  poweredByHeader: false,
-  reactStrictMode: true,
-  swcMinify: true,
-  assetPrefix: '/',
-  compiler: {
-    removeConsole: false,
-  },
-  transpilePackages: ['@netlify/plugin-nextjs'],
-  distDir: '.next',
-  generateBuildId: async () => {
-    return 'build'
-  },
-  basePath: '',
-  cssModules: true,
-  cssLoaderOptions: {
-    importLoaders: 1,
-    localIdentName: '[local]___[hash:base64:5]',
-  }
+  output: 'export',
+  distDir: 'out',
+  trailingSlash: true,
 }
 
 export default nextConfig 

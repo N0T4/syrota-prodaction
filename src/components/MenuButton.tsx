@@ -1,3 +1,5 @@
+'use client'
+
 interface MenuButtonProps {
   isOpen: boolean;
   onClick: () => void;

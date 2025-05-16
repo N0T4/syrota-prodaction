@@ -6,6 +6,7 @@ import { Footer } from '@/components/Footer'
 export const metadata: Metadata = {
   title: "Syrota.Production",
   description: "Film and TV Student Portfolio",
+  viewport: "width=device-width, initial-scale=1, maximum-scale=1",
 };
 
 export default function RootLayout({
@@ -25,7 +26,7 @@ export default function RootLayout({
       </head>
       <body className="min-h-screen bg-white text-theme-text">
         <Navigation />
-        <main className="flex min-h-screen flex-col pt-20">
+        <main className="flex min-h-screen flex-col pt-20 px-4 md:px-6">
           {children}
         </main>
         <Footer />

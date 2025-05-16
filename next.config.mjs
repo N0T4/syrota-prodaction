@@ -29,6 +29,13 @@ const nextConfig = {
       '/experience': { page: '/experience' },
       '/portfolio': { page: '/portfolio' }
     }
+  },
+  webpack: (config) => {
+    config.module.rules.push({
+      test: /\.css$/,
+      use: ['style-loader', 'css-loader', 'postcss-loader'],
+    });
+    return config;
   }
 }
 

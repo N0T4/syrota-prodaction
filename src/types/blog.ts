@@ -46,7 +46,7 @@ Left Unsaid was not perfect - but it was real. It came from a place of growth, e
 
 This was just the beginning, but it gave me a foundation I will build on for every project to come.
     `,
-
+    readTime: '5 min read',
     thumbnail: '/img/pidor.jpeg',
     tags: ['Production', 'Leadership', 'Student Film', 'Behind the Scenes'],
     category: 'Production'
@@ -95,7 +95,7 @@ Most importantly, I have learned to respect the emotional power of sound in shap
 
 Whether it is the beat of a bass line or the quiet hum between words, I now see sound as an invisible character in every film — and I am excited to keep exploring what it can do.
     `,
-
+    readTime: '4 min read',
     thumbnail: '/img/download.jpeg',
     tags: ['Sound Design', 'Documentary', 'Technical', 'Creative Process'],
     category: 'Sound Design'
@@ -151,7 +151,7 @@ At the end of the day, film production is not just about making movies. It is ab
 
 And no matter how chaotic it gets, I keep coming back — because when it all comes together, even for a moment, there is truly nothing else like it.
     `,
-
+    readTime: '6 min read',
     thumbnail: '/img/jo jones.jpeg',
     tags: ['Production', 'Behind the Scenes', 'Filmmaking', 'Process'],
     category: 'Production'
@@ -190,7 +190,7 @@ We forget tasks. We forget to-do lists. But we remember how a scene made us feel
 
 And that is why I will keep showing up, again and again — not just to make films, but to help shape something that lasts beyond the final frame.
     `,
-
+    readTime: '4 min read',
     thumbnail: '/img/b6b7329363864908eaf19854ab4facbb.jpg',
     tags: ['Storytelling', 'Creative Process', 'Personal', 'Filmmaking'],
     category: 'Creative Process'

@@ -1,6 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
+    unoptimized: true,
     remotePatterns: [
       {
         protocol: 'https',
@@ -13,10 +14,14 @@ const nextConfig = {
     typedRoutes: true,
     serverActions: true,
   },
-  output: 'standalone',
+  output: 'export',
   poweredByHeader: false,
   reactStrictMode: true,
-  swcMinify: true
+  swcMinify: true,
+  distDir: '.next',
+  generateBuildId: async () => {
+    return 'build'
+  }
 }
 
 export default nextConfig 

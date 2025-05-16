@@ -118,7 +118,7 @@ This project gave me the foundation, the insight, and the motivation to pursue p
     technicalDetails: {
       format: 'Digital',
       resolution: '4K',
-      duration: '15 minutes'
+
     }
   },
   {
@@ -175,14 +175,14 @@ This experience taught me the importance of mobility, speed, and adaptability in
     technicalDetails: {
       format: 'Digital',
       resolution: '4K',
-      duration: '45 minutes'
+
     }
   },
   {
     id: 'tin-kvadrata-kolo',
     title: 'TINЬ KVADRATA KOLO',
     year: 2023,
-    category: 'Drama',
+    category: 'Art-House',
     description: 'The shadow of a square is a circle.',
     fullDescription: 'This short film explores the universal theme of individuality and unity — the idea that while we all have unique experiences, we are fundamentally connected by shared emotions, thoughts, and human complexity. Visually, the film reflects this paradox through contrast and harmony, and as the Set Designer, I was responsible for building environments that reinforced these layered meanings.',
     role: {
@@ -221,7 +221,7 @@ This experience taught me the importance of mobility, speed, and adaptability in
     technicalDetails: {
       format: 'Digital',
       resolution: '4K',
-      duration: '20 minutes'
+
     }
   },
   {
@@ -287,7 +287,7 @@ As the Floor Manager, my role became especially active once we entered the rehea
     technicalDetails: {
       format: 'Digital',
       resolution: '4K',
-      duration: '30 minutes'
+
     }
   },
   {
@@ -340,7 +340,7 @@ This project sharpened my ability to bridge creativity and structure, and affirm
     technicalDetails: {
       format: 'Digital',
       resolution: '4K',
-      duration: '25 minutes'
+
     }
   },
   {
@@ -393,7 +393,7 @@ Completing this project was a deeply rewarding experience. It confirmed my passi
     technicalDetails: {
       format: 'Digital',
       resolution: '4K',
-      duration: '10 minutes'
+
     }
   }
 ]; 

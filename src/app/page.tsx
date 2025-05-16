@@ -100,7 +100,7 @@ export default function Home() {
             Services
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {['Direction', 'Cinematography', 'Post-Production'].map((service) => (
+            {['Direction', 'Cinematography', 'Producing'].map((service) => (
               <div key={service} className="theme-card text-center p-8">
                 <div className="w-16 h-16 mx-auto mb-6 rounded-full bg-theme-primary/10 flex items-center justify-center">
                   <span className="text-theme-primary text-2xl">•</span>

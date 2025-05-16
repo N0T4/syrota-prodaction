@@ -12,16 +12,13 @@ const nextConfig = {
   },
   experimental: {
     typedRoutes: true,
-    serverActions: true,
   },
   output: 'export',
   poweredByHeader: false,
   reactStrictMode: true,
   swcMinify: true,
-  distDir: '.next',
-  generateBuildId: async () => {
-    return 'build'
-  }
+  distDir: 'out',
+  trailingSlash: true
 }
 
 export default nextConfig 

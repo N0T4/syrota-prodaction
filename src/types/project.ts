@@ -172,8 +172,7 @@ This experience taught me the importance of mobility, speed, and adaptability in
     },
     technicalDetails: {
       format: 'Digital',
-      resolution: '4K',
-      duration: '25 minutes'
+      resolution: '4K'
     }
   },
   {
@@ -218,8 +217,7 @@ This experience taught me the importance of mobility, speed, and adaptability in
     },
     technicalDetails: {
       format: 'Digital',
-      resolution: '4K',
-
+      resolution: '4K'
     }
   },
   {
@@ -284,8 +282,7 @@ As the Floor Manager, my role became especially active once we entered the rehea
     },
     technicalDetails: {
       format: 'Digital',
-      resolution: '4K',
-
+      resolution: '4K'
     }
   },
   {
@@ -337,8 +334,7 @@ This project sharpened my ability to bridge creativity and structure, and affirm
     },
     technicalDetails: {
       format: 'Digital',
-      resolution: '4K',
-
+      resolution: '4K'
     }
   },
   {
@@ -390,8 +386,7 @@ Completing this project was a deeply rewarding experience. It confirmed my passi
     },
     technicalDetails: {
       format: 'Digital',
-      resolution: '4K',
-
+      resolution: '4K'
     }
   }
 ]; 

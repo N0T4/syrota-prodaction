@@ -52,9 +52,11 @@ export default function ProjectPage({ params }: { params: { id: string } }) {
             {/* Project Metadata */}
             <div className="flex flex-wrap gap-4 mb-8 text-theme-text/80">
               {project.year && <span>{project.year}</span>}
-              {project.category && <span>• {project.category}</span>}
-              {project.genre && <span>• {project.genre}</span>}
-              {project.duration && <span>• {project.duration}</span>}
+              <div className="flex items-center gap-2 text-theme-text/60 font-body">
+                {project.category && <span>{project.category}</span>}
+                {project.genre && <span>• {project.genre}</span>}
+                {project.technicalDetails?.duration && <span>• {project.technicalDetails.duration}</span>}
+              </div>
             </div>
 
             {/* Short Description */}

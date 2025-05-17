@@ -14,14 +14,9 @@ const nextConfig = {
   // Disable server-side features for static export
   experimental: {
     serverActions: false,
-    appDir: true,
   },
   // Enable trailing slashes for static hosting
   trailingSlash: true,
-  // Disable image optimization for static export
-  images: {
-    unoptimized: true,
-  },
   // Disable server components for static export
   reactStrictMode: true,
   swcMinify: true,

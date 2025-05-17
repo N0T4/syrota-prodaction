@@ -8,7 +8,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "build:netlify": "next build && touch out/.nojekyll",
+    "build:netlify": "next build && cp -r .next/static out/_next/static && touch out/.nojekyll",
     "start": "next start",
     "lint": "next lint"
   },

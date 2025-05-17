@@ -115,8 +115,7 @@ This project gave me the foundation, the insight, and the motivation to pursue p
     },
     technicalDetails: {
       format: 'Digital',
-      resolution: '4K',
-      duration: '15 minutes'
+      resolution: '4K'
     }
   },
   {

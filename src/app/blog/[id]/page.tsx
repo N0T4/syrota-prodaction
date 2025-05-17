@@ -38,8 +38,6 @@ export default function BlogPost({ params }: { params: { id: string } }) {
           </h1>
           <div className="flex items-center gap-4 text-theme-text/60 font-body">
             <span>{post.date}</span>
-            
-            <span>{post.readTime}</span>
           </div>
         </header>
 

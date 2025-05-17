@@ -36,8 +36,6 @@ export default function Blog() {
           <p className="text-theme-text/80 mb-3 font-body">{featuredPost.excerpt}</p>
           <div className="flex items-center gap-4 text-theme-text/60 font-body">
             <span>{featuredPost.date}</span>
-
-            <span>{featuredPost.readTime}</span>
           </div>
         </Link>
       </div>
@@ -61,8 +59,6 @@ export default function Blog() {
             <p className="text-theme-text/80 text-sm mb-3 line-clamp-2 font-body">{post.excerpt}</p>
             <div className="flex items-center gap-3 text-sm text-theme-text/60 font-body">
               <span>{post.date}</span>
-
-              <span>{post.readTime}</span>
             </div>
           </Link>
         ))}

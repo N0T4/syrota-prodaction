@@ -17,12 +17,12 @@ export function Navigation() {
       <div className="container mx-auto px-4 md:px-6 py-4">
         <div className="flex items-center justify-between">
           <Link href="/" className="flex items-center gap-2">
-            <div className="relative w-8 h-8">
+            <div className="relative w-[42px] h-[42px]">
               <Image
                 src="/img/logo.png"
                 alt="Syrota Production Logo"
                 fill
-                sizes="32px"
+                sizes="42px"
                 priority
                 className="object-contain"
               />

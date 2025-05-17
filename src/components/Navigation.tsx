@@ -16,14 +16,17 @@ export function Navigation() {
     <nav className="fixed top-0 w-full z-50 bg-white/80 backdrop-blur-md">
       <div className="container mx-auto px-4 md:px-6 py-4">
         <div className="flex items-center justify-between">
-          <Link href="/" className="flex items-center gap-3">
-            <Image
-              src="/img/logo.png"
-              alt="Syrota Production Logo"
-              width={40}
-              height={40}
-              className="object-contain"
-            />
+          <Link href="/" className="flex items-center gap-2">
+            <div className="relative w-8 h-8">
+              <Image
+                src="/img/logo.png"
+                alt="Syrota Production Logo"
+                fill
+                sizes="32px"
+                priority
+                className="object-contain"
+              />
+            </div>
             <span className="text-2xl font-display text-theme-primary hover:text-theme-secondary transition-colors">
               Syrota<span className="text-theme-tertiary">.Production</span>
             </span>
